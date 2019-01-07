@@ -67,6 +67,20 @@ function checkLetters(letter) {
 
 }
 
+function roundComplete(){
+    console.log("WIn count "+ winCount + "loss count "+ lossCount + "guesses left " + guessesLeft);
+
+    if( lettersinWord.toString()== blanksAndSuccesses.toString()){
+        winCount++;
+        alert('you won!');
+        document.getElementById("winCounter").innerHTML = winCount;
+        startGame();
+    } else if (numGuesses == 0){
+        lossCount++;
+        document.getElementById("lossCounter").innerHTML = lossCount;
+        startGame();
+    }
+}
 
 
 //===============================
@@ -82,6 +96,7 @@ document.onkeyup = function (event) {
 
     console.log(letterGuessed);
 }
+roundComplete();
 
 //===============================
 
