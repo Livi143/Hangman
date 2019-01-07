@@ -1,3 +1,5 @@
+// pretty much ended at 28 https://www.youtube.com/watch?v=cgdmOR15cn4&feature=youtu.be
+
 // global variables
 
 // arrays and vars for holding data
